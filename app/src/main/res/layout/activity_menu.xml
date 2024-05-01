@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_2"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:id="@+id/play_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/newGameBtn"
+            style="@style/MenuButton"
+            android:background="@drawable/info_bg"
+            >
+
+            <TextView
+                style="@style/MenuText"
+                android:text="New game" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/continueBtn"
+            style="@style/MenuButton"
+            android:background="@drawable/info_bg"
+            >
+
+            <TextView
+                style="@style/MenuText"
+                android:text="Continue"
+
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cancel_btn"
+            style="@style/MenuButton"
+            android:background="@drawable/info_bg"
+
+            >
+
+            <TextView
+                style="@style/MenuText"
+                android:text="Cancel" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/dialogMenuButtonsView"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/play_btn"
+            style="@style/MenuButton"
+            android:background="@drawable/play_btn"
+            android:layout_gravity="center|end"
+            android:gravity="center"
+            >
+
+            <TextView
+                style="@style/MenuText"
+                android:layout_width="97dp"
+                android:text="Play" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/statisticsBtn"
+            style="@style/MenuButton1"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/statistics_bg"
+                android:scaleType="fitXY"
+
+                />
+
+            <TextView
+                style="@style/MenuText"
+                android:text="Statistics"
+
+                />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/infoBtn"
+            style="@style/MenuButton1"
+            android:background="@drawable/statistics_bg">
+
+            <TextView
+                style="@style/MenuText"
+                android:text="Info"
+
+                />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/exitBtn"
+            style="@style/MenuButton1"
+            android:background="@drawable/statistics_bg"
+            >
+
+            <TextView
+                style="@style/MenuText"
+                android:text="Exit" />
+
+        </FrameLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <FrameLayout
+        android:id="@+id/exitScreen"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:background="@drawable/yes_no_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/like5"
+            android:text="Do you want to quit?"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/yesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_margin="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/like5"
+            android:text="yes"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+
+        <TextView
+            android:id="@+id/noBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="50dp"
+            android:fontFamily="@font/like5"
+            android:text="no"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/statisticsScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:background="@drawable/yes_no_bg"
+        android:visibility="gone">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|center"
+            android:background="@drawable/exit_bg"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/like4"
+                android:text="Winners"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <FrameLayout
+            android:id="@+id/statisticsView"
+            android:layout_width="210dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_first_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:fontFamily="@font/like5"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                tools:text="0 steps" />
+
+            <TextView
+                android:id="@+id/tv_second_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/like5"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                tools:text="0 steps" />
+
+            <TextView
+                android:id="@+id/tv_third_steps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="@font/like5"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                tools:text="0 steps" />
+
+        </FrameLayout>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_close_statistics"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/ok_btn" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/infoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="355dp"
+            android:layout_height="560dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/yes_no_bg"
+            android:paddingHorizontal="25dp"
+            android:paddingTop="44dp"
+            android:paddingBottom="60dp">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/like5"
+                android:text="Immerse yourself in the captivating world of Puzzle 15, where entertainment meets brain-boosting fun! Engage your mind in a stimulating challenge that not only entertains but also enhances your cognitive abilities."
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+
+
+
+        </ScrollView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/quitBtn"
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/ok_btn" />
+    </FrameLayout>
+</FrameLayout>

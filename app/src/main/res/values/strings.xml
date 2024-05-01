@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Puzzle15App</string>
+    <string name="_0">0</string>
+    <string name="record_is_0">record_is_0</string>
+    <string name="paused">paused</string>
+    <string name="pause">Pause</string>
+</resources>
